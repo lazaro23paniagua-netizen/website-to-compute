@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>App portada desde APK</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a mi versión web</h1>
+    <p>Puedes poner aquí el título de tu app</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="imagen1.png" alt="Imagen principal" />
+      <h2>Pantalla principal</h2>
+      <p>Aquí puedes mostrar el contenido que estaba en el layout de tu APK.</p>
+      <button id="btnAccion">Presióname</button>
+    </section>
+
+    <section class="galeria">
+      <h2>Recursos extraídos</h2>
+      <img src="icono1.png" alt="Ícono" />
+      <img src="icono2.png" alt="Ícono" />
+    </section>
+  </main>
+
+  <footer>
+    <p>Portado manualmente desde un APK 📱 → 🌐</p>
+  </footer>
+
+  <script>
+    // Aquí puedes añadir la lógica que quieras en JS
+    document.getElementById("btnAccion").addEventListener("click", () => {
+      alert("¡Acción simulada desde la web!");
+    });
+  </script>
+</body>
+</html>
+/* Estilos generales */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: #6200ee;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Sección principal */
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.hero button {
+  background: #03dac6;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #01b5a4;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+}
+
+/* Footer */
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
